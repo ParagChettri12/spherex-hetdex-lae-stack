@@ -17,13 +17,13 @@ The analysis has been run twice: once in 2026 on the SPHEREx data available at t
 
 \* Scaled from the bootstrap spread, which turned out to be too optimistic (see below). The DR1 limits come from the off-line scatter of the stack.
 
-No line is detected in either run. Of course, a null result is not the headline anyone hopes for, but I believe it is the honest one. In 2026 a marginal HÎ± hint (p = 0.092) from a 198-galaxy pilot disappeared at N = 565. In DR1, the bootstrap initially flagged all three lines at p < 0.001, and two null tests showed why that was wrong: with 35,673 galaxies the stack is so stable under resampling that any fixed residual looks significant. The [O II] "signal" actually grows when the redshifts are shuffled, so it is not tied to the galaxies' rest frame. HÎ± is the one line that does not behave like a pure artifact (above about 96% of off-line positions and 2.6Ïƒ above the shuffled stacks), but it stays below the detection threshold.
+No line is detected in either run. Of course, a null result is not the headline anyone hopes for, but I believe it is the real one. In the summer of 2026 a marginal HÎ± hint (p = 0.092) from a 198-galaxy pilot disappeared at N = 565. In DR1, the bootstrap initially flagged all three lines at p < 0.001, and two null tests showed why that was wrong: with 35,673 galaxies the stack is so stable under resampling that any fixed residual looks significant. The [O II] "signal" actually grows when the redshifts are shuffled, so it is not tied to the galaxies' rest frame. HÎ± is the one line that does not behave like a pure artifact (above about 96% of off-line positions and 2.6Ïƒ above the shuffled stacks), but it stays below the detection threshold.
 
 Three findings should be useful beyond this sample:
 
-- **The stack is systematics-limited.** With 63 times more galaxies, the DR1 upper limits are no tighter than the 2026 ones. The floor is set by zodiacal-model residuals and continuum structure, not by the number of galaxies.
+- **The stack is systematics-limited.** With 63 times more galaxies, the DR1 upper limits are no tighter than the summer 2026 ones. The floor is set by zodiacal-model residuals and continuum structure, not by the number of galaxies.
 - **Bootstrap significance is not a detection criterion for very large stacks.** It measures how stable the stack is, not whether a residual belongs to the galaxies. The notebook now decides detections with an off-line scan and a redshift-shuffle test instead.
-- **Zodiacal dominance and coverage effects.** Roughly 82-85% of the raw pixel signal at these positions is zodiacal light. The band-count selection effect I found in 2026 (sources covered by more detectors are brighter, Kruskal-Wallis p = 8.8 Ã— 10â»â¶â¶) was a product of partial coverage and largely disappears in DR1.
+- **Zodiacal dominance and coverage effects.** Roughly 82-85% of the raw pixel signal at these positions is zodiacal light. The band-count selection effect I found in the summer of 2026 (sources covered by more detectors are brighter, Kruskal-Wallis p = 8.8 Ã— 10â»â¶â¶) was a product of partial coverage and largely disappears in DR1.
 
 The executed DR1 notebook, with every figure and number, is [`SPHEREx-HETDEX-LAE-Stack.ipynb`](SPHEREx-HETDEX-LAE-Stack.ipynb). The machine-readable outputs are in [`results/dr1_20261122/`](results/dr1_20261122/).
 
@@ -42,7 +42,7 @@ The executed DR1 notebook, with every figure and number, is [`SPHEREx-HETDEX-LAE
 
 ## Rerunning my analysis
 
-The SPHEREx cache (about 100 MB per run) is not in the repository. Build one with the pipeline below, or, if you already have a cache, put it at `data/sed_cache_full.pkl` and open the notebook:
+The SPHEREx cache (about 100 MB per run) is not in the repository. You can build one with the pipeline below, or, if you already have a cache, put it at `data/sed_cache_full.pkl` and open the notebook:
 
 ```bash
 pip install -r requirements.txt
@@ -111,3 +111,7 @@ More galaxies will not move these limits much, so the next improvements are abou
 ## Author
 
 Parag Chettri, with Prof. Donghui Jeong, Department of Astronomy & Astrophysics, Pennsylvania State University
+
+## AI Disclosure
+
+This work's debugging has been done using Anthropic's Claude with caution and attention to detail.
