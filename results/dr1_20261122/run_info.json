@@ -1,0 +1,9 @@
+{
+  "created": "2026-11-22T16:08:19",
+  "n_targets": 40082,
+  "chunk_size": 500,
+  "n_chunks": 81,
+  "test_limit": null,
+  "selection": "source_type=='lae', 1.88<z<3.52, z_hetdex_conf>0.9",
+  "catalog": "hetdex_sc1_v3.2.ecsv"
+}

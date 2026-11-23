@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-23T14:00:52",
+  "cache_file": "sed_cache_full.pkl",
+  "n_with_coverage": 39403,
+  "n_six_band": 35673,
+  "n_control": 464,
+  "n_bootstrap": 1000,
+  "n_shuffle": 20,
+  "offline_scatter_snr": 0.7911059028664198,
+  "zodi_fraction": 0.8507850393047267,
+  "mean_z_six_band": 2.514645903705264,
+  "lines": {
+    "OII_3727": {
+      "status": "reachable",
+      "snr_clean": 1.0728102230765804,
+      "p_clean": 0.0,
+      "p_raw": 0.0,
+      "lc_clean": 0.11531285586154348,
+      "offline_frac_ge": 0.06956521739130435,
+      "shuffle_z": -2.988970312992445,
+      "ul_3sigma": 0.3704130002845888,
+      "verdict": "non-detection"
+    },
+    "OIII_5007": {
+      "status": "reachable",
+      "snr_clean": 0.4535950064843643,
+      "p_clean": 0.0,
+      "p_raw": 0.0,
+      "lc_clean": 0.04498544341965279,
+      "offline_frac_ge": 0.2608695652173913,
+      "shuffle_z": 1.0198293922840183,
+      "ul_3sigma": 0.28036005727297403,
+      "verdict": "non-detection"
+    },
+    "Ha_6563": {
+      "status": "reachable",
+      "snr_clean": 1.526036743278637,
+      "p_clean": 0.0,
+      "p_raw": 0.0,
+      "lc_clean": 0.050688180041659175,
+      "offline_frac_ge": 0.043478260869565216,
+      "shuffle_z": 2.638536307873964,
+      "ul_3sigma": 0.12951928017040099,
+      "verdict": "hint (below detection threshold)"
+    }
+  }
+}
