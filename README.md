@@ -23,7 +23,7 @@ Three findings should be useful beyond this sample:
 
 - **The stack is systematics-limited.** With 63 times more galaxies, the DR1 upper limits are no tighter than the summer 2026 ones. The floor is set by zodiacal-model residuals and continuum structure, not by the number of galaxies.
 - **Bootstrap significance is not a detection criterion for very large stacks.** It measures how stable the stack is, not whether a residual belongs to the galaxies. The notebook now decides detections with an off-line scan and a redshift-shuffle test instead.
-- **Zodiacal dominance and coverage effects.** Roughly 82-85% of the raw pixel signal at these positions is zodiacal light. The band-count selection effect I found in the summer of 2026 (sources covered by more detectors are brighter, Kruskal-Wallis p = 8.8 Ã— 10â»â¶â¶) was a product of partial coverage and largely disappears in DR1.
+- **Zodiacal dominance and coverage effects.** Roughly 82-85% of the raw pixel signal at these positions is zodiacal light. The band-count selection effect I found in the summer of 2026 (sources covered by more detectors are brighter, Kruskal-Wallis p = 8.8e-166) was a product of partial coverage and largely disappears in DR1.
 
 The executed DR1 notebook, with every figure and number, is [`SPHEREx-HETDEX-LAE-Stack.ipynb`](SPHEREx-HETDEX-LAE-Stack.ipynb). The machine-readable outputs are in [`results/dr1_20261122/`](results/dr1_20261122/).
 
