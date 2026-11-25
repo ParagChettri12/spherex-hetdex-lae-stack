@@ -1,6 +1,6 @@
 ﻿# SPHEREx x HETDEX: Stacking Infrared Photometry at Lyman-Alpha Emitter Positions
 
-When I started this project, I wanted to know what the average Lyman-alpha emitter (LAE) looks like in the infrared. HETDEX has measured spectroscopic redshifts for tens of thousands of LAEs at z ~ 2-3, but its spectrograph stops at 5500 Ã…, so the rest-frame optical lines that carry the most physics ([O II] 3727, [O III] 5007, HÎ± 6563) are out of reach. At these redshifts those lines fall between 1.3 and 2.3 Âµm, right in the middle of the SPHEREx bandpass. This repository stacks SPHEREx photometry at HETDEX LAE positions to see whether those lines can be recovered statistically, and it includes the pipeline that rebuilds the whole analysis from the IRSA archive whenever SPHEREx releases new data.
+When I started this project, I wanted to know what the average Lyman-alpha emitter (LAE) looks like in the infrared. HETDEX has measured spectroscopic redshifts for tens of thousands of LAEs at z ~ 2-3, but its spectrograph stops at 5500 Ã…, so the rest-frame optical lines that carry the most physics ([O II] 3727, [O III] 5007, H alpha 6563) are out of reach. At these redshifts those lines fall between 1.3 and 2.3µm, right in the middle of the SPHEREx bandpass. This repository stacks SPHEREx photometry at HETDEX LAE positions to see whether those lines can be recovered statistically, and it includes the pipeline that rebuilds the whole analysis from the IRSA archive whenever SPHEREx releases new data.
 
 ## Results
 
@@ -53,7 +53,7 @@ The HETDEX catalog downloads into `data/` on first run. For the DR1 sample, the 
 
 ## Running on a new SPHEREx data release
 
-The fetch does not depend on any earlier cache. For every high-confidence HETDEX LAE (39,422 unique sources), it asks IRSA for every SPHEREx science exposure that covers the position, with no row limit, so whatever is in the archive on the day you run it is what you get. A new release needs no code changes.
+The fetch is not meant to depend on any earlier cache. For every high-confidence HETDEX LAE (39,422 unique sources), it asks IRSA for every SPHEREx science exposure that covers the position, with no row limit, so whatever is in the archive on the day you run it is what you get. A new release needs no code changes.
 
 On Roar Collab (or any SLURM cluster after editing `config.sh`):
 
@@ -106,7 +106,7 @@ Finished chunks are skipped, partial chunks resume from their checkpoint, and ga
 
 ## Next steps
 
-More galaxies will not move these limits much, so the next improvements are about systematics. Each detector band in the DR1 run was measured from one of roughly 55 available exposures (`EPOCHS_PER_BAND = 1` in `config.sh`). Zodiacal light changes with viewing geometry, so averaging over many epochs may average down exactly the residuals that set the current floor. A smoother continuum model under each line should also reduce the curvature that produced the [O II] false positive. The HÎ± excess is the first thing I would check in the next release.
+More galaxies will not move these limits much, so the next improvements are about systematics. Each detector band in the DR1 run was measured from one of roughly 55 available exposures (`EPOCHS_PER_BAND = 1` in `config.sh`). Zodiacal light changes with viewing geometry, so averaging over many epochs may average down exactly the residuals that set the current floor. A smoother continuum model under each line should also reduce the curvature that produced the [O II] false positive. The H alpha excess is the first thing I would check in the next release.
 
 ## Author
 
