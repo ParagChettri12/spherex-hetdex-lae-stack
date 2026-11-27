@@ -6,7 +6,7 @@ When I started this project, I wanted to know what the average Lyman-alpha emitt
 
 The analysis has been run twice: once in 2026 on the SPHEREx data available at the time, and once in November 2026 on DR1 plus QR3, which together cover essentially every HETDEX LAE.
 
-| Quantity | 2026 run | DR1 run (Nov 2026) |
+| Quantity | Summer 2026 run | DR1 run (Nov 2026) |
 |---|---|---|
 | LAEs with SPHEREx coverage | 20,268 | 39,403 of 39,422 |
 | Six-band (D1-D6) science sample | 565 | 35,673 |
