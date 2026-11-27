@@ -11,9 +11,9 @@ The analysis has been run twice: once in 2026 on the SPHEREx data available at t
 | LAEs with SPHEREx coverage | 20,268 | 39,403 of 39,422 |
 | Six-band (D1-D6) science sample | 565 | 35,673 |
 | Zodiacal-light fraction of raw signal | 0.818 | 0.851 |
-| [O II] 3727: verdict, 3Ïƒ upper limit on L/C | non-detection, 0.154* | non-detection, 0.37 |
-| [O III] 5007: verdict, 3Ïƒ upper limit on L/C | non-detection, 0.315* | non-detection, 0.28 |
-| HÎ± 6563: verdict, 3Ïƒ upper limit on L/C | non-detection, 0.147* | hint below threshold, 0.13 |
+| [O II] 3727: verdict, 3sigma upper limit on L/C | non-detection, 0.154* | non-detection, 0.37 |
+| [O III] 5007: verdict, 3sigmaupper limit on L/C | non-detection, 0.315* | non-detection, 0.28 |
+| H alpha 6563: verdict, 3sigma upper limit on L/C | non-detection, 0.147* | hint below threshold, 0.13 |
 
 \* Scaled from the bootstrap spread, which turned out to be too optimistic (see below). The DR1 limits come from the off-line scatter of the stack.
 
